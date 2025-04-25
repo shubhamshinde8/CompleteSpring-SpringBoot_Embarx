@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="carspecification" class="com.shubham.CarSpecification">
+	<property name="make" value="toyota"/>
+	<property name="model" value="fortuner"/>
+	</bean>
+	
+	<bean id="car" class="com.shubham.Car">
+	<property name="carSpecification" ref="carspecification"/>
+	<property name="carOutletInfo" ref="caroutlets"/>
+	</bean>
+	
+	<bean id="caroutlets" class="com.shubham.CarOutletInfo">
+	<property name="carColour" value="black"/>
+	<property name="is_car_sunroop" value="false"/>
+	<property name="freeservisingsCount" value="10"/>
+	<property name="carInsurence" value="1500000"/>
+	
+	</bean>
+
+</beans>
