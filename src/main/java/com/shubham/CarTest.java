@@ -2,6 +2,8 @@ package com.shubham;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
 
 public class CarTest {
 	public static void main(String[] args) {

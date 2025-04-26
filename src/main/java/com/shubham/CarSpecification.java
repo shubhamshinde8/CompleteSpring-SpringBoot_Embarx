@@ -1,5 +1,8 @@
 package com.shubham;
 
+import org.springframework.stereotype.Component;
+
+
 public class CarSpecification {
 	
 	String make;
